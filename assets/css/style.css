@@ -226,14 +226,14 @@ header .navbar ul li a:hover {
   }
   .home .image  {
     width: 100%;
-    margin-top: 10rem;
+    margin-top: 11rem;
     display: flex; 
      justify-content: center;
   }
   .home .image img {
     margin-left: 0;
     width: 80%;
-    height: 370px;
+    height: 380px;
      
      
   }
