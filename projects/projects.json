@@ -1,0 +1,53 @@
+[
+  {
+    "name": "Online Food Ordering System",
+    "desc": "Food ordering made easy by online method . A personal project based on HTML, CSS, JavaScript, PHP and MySQL.",
+    "image": "Screenshot_2",
+    "category": "web",
+    "links": {
+      "view": "",
+      "code": ""
+    }
+  },
+  {
+    "name": "GhumGham - A Travel Matchmaking Site ",
+    "desc": "A Final Year project built on NextJS & MySQL. It is a travel matchmaking site where users can find travel partners.",
+    "image": "ghumgham",
+    "category": "next",
+    "links": {
+      "view": "",
+      "code": ""
+    }
+  },
+  {
+    "name": "Cooperative Websites",
+    "desc": "Built multiple websites for cooperatives under the office work using HTML, CSS, JavaScript and Bootstrap.",
+    "image": "coop",
+    "category": "web",
+    "links": {
+      "view": "",
+      "code": ""
+    }
+  },
+  {
+    "name": "Cooperative Management System",
+    "desc": "Office work based on React for the management of the whole cooperatives systems. It's a desktop based application.",
+    "image": "emilus",
+    "category": "mern",
+    "links": {
+      "view": "",
+      "code": ""
+    }
+  },
+  {
+    "name": "Online Invitation System",
+    "desc": "An online invitation system also based on office project designed and built based on NextJS and MySQL.",
+    "image": "invite",
+    "category": "next",
+    "links": {
+      "view": "",
+      "code": ""
+    }
+  }
+  
+]

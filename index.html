@@ -1,195 +1,486 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="Anish Ghorasaine, portfolio, anish, frontend dev, personal portfolio, Anish, portfolio design, portfolio website, personal portfolio"
+    />
+    <meta
+      name="description"
+      content="Welcome to Anish's Portfolio. FrontEnd React Developer"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Favicon -->
+    <link
+      id="favicon"
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-png"
+    />
     <title>Anish Ghorasaine</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
+  </head>
 
-<body>
-    <!--body-->
-    <header class="header">
-        <a href="#" class="logo">AG</a>
-        <i class='bx bx-menu' id="menu-icon"></i>
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">ABOUT</a>
-            <a href="#services">SERVICES</a>
-            <a href="#portfolio">PORTFOLIO</a>
-            <a href="#contact">CONTACT</a>
-        </nav>
+  <body oncontextmenu="return false">
+    <!-- pre loader -->
+    <!-- <div class="loader-container">
+  <img draggable="false" src="./assets/images/preloader.gif" alt="">
+</div> -->
+
+    <!-- navbar starts -->
+    <header>
+      <a href="/" class="logo"> AG</a>
+
+      <div id="menu" class="fas fa-bars"></div>
+      <nav class="navbar">
+        <ul>
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
+    <!-- navbar ends -->
+
+    <!-- hero section starts -->
     <section class="home" id="home">
-        <div class="home-content">
-            <h3>Hello,It's Me</h3>
-            <h1>Anish</h1>
-            <h3>And I'm a <span class="multiple-text"></span></h3>
-            <div class="social-media">
-                <a href="https://github.com/Anish1ag"><i class='bx bxl-github'></i></a>
-                <a href="mailto:thunderstorm.1357a@gmail.com"><i class='bx bxs-envelope'></i></a>
-                <a href="https://www.facebook.com/anish.ghorshaine"><i class='bx bxl-facebook'></i></a>
-                <a href="https://www.linkedin.com/in/anish-ghorshaine-6514a031b/"><i
-                        class='bx bxl-linkedin-square'></i></a>
-            </div>
-            <a href="C:\Users\shrey\Downloads\" class="btn">Download CV</a>
+      <div id="particles-js"></div>
+
+      <div class="content">
+        <h2>
+          Hi There,<br />
+          I'm Anish <span>Ghorasaine</span>
+        </h2>
+        <p>i am into <span class="typing-text"></span></p>
+        <a href="#about" class="btn"
+          ><span>About Me</span>
+          <i class="fas fa-arrow-circle-down"></i>
+        </a>
+        <div class="socials">
+          <ul class="social-icons">
+            <li>
+              <a
+                class="linkedin"
+                aria-label="LinkedIn"
+                href="https://www.linkedin.com/in/anish-ghorshaine-6514a031b/"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                class="github"
+                aria-label="GitHub"
+                href="https://github.com/Anish1ag"
+                target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+            </li>
+
+            <li>
+              <a
+                class="instagram"
+                aria-label="Instagram"
+                href="https://www.instagram.com/ag_anish_13/profilecard/?igsh=MWF5MGFlcGZheTBlNA=="
+                ><i class="fab fa-instagram" target="_blank"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                class="facebook"
+                aria-label="Facebook"
+                href="https://www.facebook.com/anish.ghorshaine/"
+                ><i class="fab fa-facebook" target="_blank"></i
+              ></a>
+            </li>
+          </ul>
         </div>
-        <div class="home-img">
-            <img src="./myproject/image/IMG_20231113_181920.jpg" alt="">
-        </div>
+      </div>
+      <div class="image">
+        <img
+          draggable="false"
+          class="tilt"
+          src="./assets/images/1681535448049.jpg"
+          alt=""
+        />
+      </div>
     </section>
+    <!-- hero section ends -->
+
+    <!-- about section starts -->
     <section class="about" id="about">
-        <div class="about-img">
-            <img src="https://media.licdn.com/dms/image/v2/D5603AQGqOUV6-g7hvg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1721814586737?e=1729728000&v=beta&t=MNCdS9UxynZWAmx7GbtrnxVlTmrUPKB3Ab5I8hVfV80"
-                alt="photo">
-        </div>
-        <div class="about-content">
-            <h2 class="heading"><span>About</span>&nbsp;Me</h2>
-            <h3>Frontend <span>Developer</span> </h3>
-            <p>
-                <span>Crafting Dynamic Digital Experiences with a Focus on Aesthetics and Functionality</span><br>
-                As a frontend developer, I specialize in transforming complex ideas into sleek, responsive single-page
-                web applications.
-                <br>
-                <br>
-                <span>
-                    Core Expertise:</span>
-                <br>
+      <h2 class="heading">
+        <i class="fas fa-user-alt"></i> About <span>Me</span>
+      </h2>
 
-                JavaScript, HTML, CSS: The trifecta of modern web development, allowing me to build robust, interactive
-                components and layouts.
-                <br>
-                <br>
-                Tailwind & Bootstrap: Leveraging server-side scripting and front-end frameworks to craft responsive and
-                scalable web applications.
-                <br>
-                <br>
-                React & Next.js: Utilizing the power of React's component-based architecture and the efficiency of
-                Next.js for building high-performance web apps with server-side rendering and static site generation.
-            </p>
-            <a href="#" class="btn">Read More</a>
+      <div class="row">
+        <div class="image">
+          <img
+            draggable="false"
+            class="tilt"
+            src="./assets/images/IMG_0724.JPG"
+            alt=""
+          />
         </div>
+        <div class="content">
+          <h3>I'm Anish</h3>
+          <span class="tag">Front End Developer</span>
+
+          <p>
+            I am a Front-End developer based in Dhulikhel, Nepal. I am an
+            Information Technology undergraduate from TU. I am very passionate
+            about improving my coding skills & creating visually appealing and
+            user-friendly websites. I specialize in building responsive and
+            interactive WebApps using modern front-end technologies.
+            Continuously working on personal projects to enhance my skills. Love
+            to design and develop engaging user interfaces.
+          </p>
+
+          <div class="box-container">
+            <!-- <div class="box">
+              <p><span> age: </span> 20</p>
+              <p><span> phone : </span> +91 XXX-XXX-XXXX</p>
+            </div> -->
+            <div class="box">
+              <p><span> email : </span> anisgho13@gmail.com</p>
+              <p><span> place : </span> Dhulikhel, Nepal</p>
+            </div>
+          </div>
+
+          <div class="resumebtn">
+            <a href="" target="_blank" class="btn"
+              ><span>Resume</span>
+              <i class="fas fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="services" id="services">
-        <h2 class="heading">Our<span>&nbsp;Services</span></h2>
+    <!-- about section ends -->
 
-        <div class="services-container">
-            <div class="services-box">
-                <i class='bx bx-code-alt'></i>
-                <h3>Web Development</h3>
-                <p>Motivated designer and developer
-                    specialized in crafting visually stunning and highly functional single-page web applications,
-                    leveraging my expertise in JavaScript, HTML, CSS, Bootstrap, React, and Next.js to deliver
-                    exceptional user experiences.</p>
-                <a href="#" class="btn">Read More</a>
-            </div>
+    <!-- skills section starts -->
+    <section class="skills" id="skills">
+      <h2 class="heading">
+        <i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span>
+      </h2>
 
-            <div class="services-box">
-                <i class='bx bx-crop'></i>
-                <h3>UI Designer</h3>
-                <p>creating visually compelling and intuitive user interfaces, combining my expertise in design
-                    principles and modern front-end technologies.</p>
-                <a href="#" class="btn">Read More</a>
-            </div>
-
-            <div class="services-box">
-                <i class='bx bxl-instagram-alt'></i>
-                <h3>Collaborative Worker</h3>
-                <p>I excel in collaborative environments, bringing a strong blend of technical expertise and
-                    communication skills to work seamlessly with cross-functional teams and deliver high-quality web
-                    solutions.
-                </p>
-                <a href="#" class="btn">Read More</a>
-            </div>
-        </div>
+      <div class="container">
+        <div class="row" id="skillsContainer"></div>
+      </div>
     </section>
-    <section class="portfolio" id="portfolio">
-        <h2 class="heading"><span>Latest </span>&nbsp;Projects</h2>
-        <div class="portfolio-container">
-            <div class="portfolio-box">
-                <img src="myproject/image/jan-vlacuha-Rns_A8bJ_dQ-unsplash.jpg" alt="">
-                <div class="portfolio-layer">
-                    <h4>Perssonal Portfolio</h4>
-                    <p>I designed and developed my portfolio site using my expertise in responsive web design, modern
-                        JavaScript frameworks, and seamless user experience integration.</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-            <div class="portfolio-box">
-                <img src="myproject/image/austin-poon-JO_S6ewBqAk-unsplash.jpg" alt="">
-                <div class="portfolio-layer">
-                    <h4>Cooperative Institution website development</h4>
-                    <p>In this project, I designed the UI for the Cooperative Institution using HTML, CSS,
-                        JavaScript, and Bootstrap, focusing on creating an intuitive and visually appealing interface.
-                    </p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-            <div class="portfolio-box">
-                <img src="myproject/image/nubelson-fernandes--Xqckh_XVU4-unsplash.jpg" alt="">
-                <div class="portfolio-layer">
-                    <h4>Desktop Aplication</h4>
-                    <p>I am currently working for a Financial Institution's desktop application using Javascript,React
-                        and its various libraries ensuring a professional and user-friendly experience tailored to
-                        financial services.</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
+    <!-- skills section ends -->
+
+    <!-- education section starts -->
+    <section class="education" id="education">
+      <h1 class="heading">
+        <i class="fas fa-graduation-cap"></i> My <span>Qualification</span>
+      </h1>
+
+      <p class="qoute">Education is about training of the mind to think.</p>
+
+      <div class="box-container">
+        <div class="box">
+          <div class="image">
+            <img
+              draggable="false"
+              src="./assets/images/educat/425817198_793140259501106_5337998175147656176_n.jpg"
+              alt=""
+            />
+          </div>
+          <div class="content">
+            <h3>Bachelor's Degree in CSIT</h3>
+            <p>NIST College, Banepa || TU</p>
+            <h4>2021-2025 | Pursuing</h4>
+          </div>
         </div>
+
+        <div class="box">
+          <div class="image">
+            <img
+              draggable="false"
+              src="./assets/images/educat/283231479_3069487480028412_4722263258411525986_n.jpg"
+              alt=""
+            />
+          </div>
+          <div class="content">
+            <h3>Science</h3>
+            <p>Baylor International Academy</p>
+            <h4>2019-2020 | Completed</h4>
+          </div>
+        </div>
+      </div>
     </section>
+    <!-- education section ends -->
+
+    <!-- work project section starts -->
+    <section class="work" id="work">
+      <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects</h2>
+
+      <div class="box-container"></div>
+
+      <div class="viewall">
+        <a href="/projects" class="btn"
+          ><span>View All</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </section>
+    <!-- work project section ends -->
+
+    <!-- experience section starts -->
+    <section class="experience" id="experience">
+      <h2 class="heading"><i class="fas fa-briefcase"></i> Experience</h2>
+
+      <div class="timeline">
+        <div class="container left">
+          <div class="content">
+            <div class="tag">
+              <h2>Self Employed</h2>
+            </div>
+            <div class="desc">
+              <h3>Front End Developer</h3>
+              <p>2023 - present</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container right">
+          <div class="content">
+            <div class="tag">
+              <h2>UpWork</h2>
+            </div>
+            <div class="desc">
+              <h3>Freelancing</h3>
+              <p>2023 onwards</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container left">
+          <div class="content">
+            <div class="tag">
+              <h2>IT Brdige Nepal</h2>
+            </div>
+            <div class="desc">
+              <h3>React Front End Developer(Junior)</h3>
+              <p>2023 Dec - Present</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container right">
+          <div class="content">
+            <div class="tag">
+              <h2>IT Bridge Nepal</h2>
+            </div>
+            <div class="desc">
+              <h3>Web Developer | Internship</h3>
+              <p>Sept 2023 - Dec 2023</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container left">
+          <div class="content">
+            <div class="tag">
+              <h2>Cloud Factory</h2>
+            </div>
+            <div class="desc">
+              <h3>Remote Work(Web development)</h3>
+              <p>2024 onwards</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="morebtn">
+        <a href="/experience" class="btn"
+          ><span>View All</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </section>
+    <!-- experience section ends -->
+
+    <!-- contact section starts -->
     <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>ME!</span></h2>
+      <h2 class="heading">
+        <i class="fas fa-headset"></i> Get in <span>Touch</span>
+      </h2>
 
-        <form action="#" name="submit-to-google-sheet">
-            <div class="input-box">
-                <input type="text" name="Name" placeholder="Full Name">
-                <input type="email" name="Email Address" placeholder="Email Address">
+      <div class="container">
+        <div class="content">
+          <div class="image-box">
+            <img draggable="false" src="./assets/images/contact1.png" alt="" />
+          </div>
+          <form id="contact-form">
+            <div class="form-group">
+              <div class="field">
+                <input type="text" name="name" placeholder="Name" required />
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="field">
+                <input type="text" name="email" placeholder="Email" required />
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="field">
+                <input type="text" name="phone" placeholder="Phone" />
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div class="message">
+                <textarea
+                  placeholder="Message"
+                  name="message"
+                  required
+                ></textarea>
+                <i class="fas fa-comment-dots"></i>
+              </div>
             </div>
-            <div class="input-box">
-                <input type="number" name="Mobile Number" placeholder="Mobile Number">
-                <input type="text" name="Email Subject" placeholder="Email Subject">
+            <div class="button-area">
+              <button type="submit">
+                Submit <i class="fa fa-paper-plane"></i>
+              </button>
             </div>
-            <textarea name="Your Message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Message" class="btn">
-        </form>
-        <span id="msg"></span>
+          </form>
+        </div>
+      </div>
     </section>
+    <!-- contact section ends -->
 
-    <footer class="footer">
-        <div class="footer-text">
-            <p>Copyright &copy; 2024 by AG | All Rights Reserved.</p>
+    <!-- footer section starts -->
+    <div class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>Anish</h3>
+          <p>
+            Thank you for visiting my personal portfolio website. Connect with
+            me over socials. <br />
+          </p>
         </div>
-        <div class="footer-iconTop">
-            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
-        </div>
-    </footer>
 
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="#home"><i class="fas fa-chevron-circle-right"></i> home</a>
+          <a href="#about"><i class="fas fa-chevron-circle-right"></i> about</a>
+          <a href="#skills"
+            ><i class="fas fa-chevron-circle-right"></i> skills</a
+          >
+          <a href="#education"
+            ><i class="fas fa-chevron-circle-right"></i> education</a
+          >
+          <a href="#work"><i class="fas fa-chevron-circle-right"></i> work</a>
+          <a href="#experience"
+            ><i class="fas fa-chevron-circle-right"></i> experience</a
+          >
+        </div>
+
+        <div class="box">
+          <h3>contact info</h3>
+          <p><i class="fas fa-phone"></i>9823811678</p>
+          <p><i class="fas fa-envelope"></i>anisgho13@gmail.com</p>
+          <p><i class="fas fa-map-marked-alt"></i>Dhulikhel,kavre,Nepal</p>
+          <div class="share">
+            <a
+              href="https://www.linkedin.com/in/anish-ghorshaine-6514a031b/"
+              class="fab fa-linkedin"
+              aria-label="LinkedIn"
+              target="_blank"
+            ></a>
+            <a
+              href="https://github.com/Anish1ag"
+              class="fab fa-github"
+              aria-label="GitHub"
+              target="_blank"
+            ></a>
+            <a
+              href="mailto:anisgho13@gmail.com"
+              class="fas fa-envelope"
+              aria-label="Mail"
+              target="_blank"
+            ></a>
+
+            <a
+              href="https://www.facebook.com/anish.ghorshaine/"
+              class="fab fa-facebook"
+              aria-label="Facebook"
+              target="_blank"
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <h1 class="credit">
+        Designed with <i class="fa fa-heart pulse"></i> by
+        <a href="https://www.linkedin.com/in/anish-ghorshaine-6514a031b/">
+          AG</a
+        >
+      </h1>
+    </div>
+    <!-- footer section ends -->
+
+    <!-- scroll top btn -->
+    <a
+      href="#home"
+      aria-label="ScrollTop"
+      class="fas fa-angle-up"
+      id="scroll-top"
+    ></a>
+    <!-- scroll back to top -->
+
+    <!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
+    <!-- jquery cdn -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- typed.js cdn -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"
+      integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- particle.js links -->
+    <script src="./assets/js/particles.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+
+    <!-- vanilla tilt.js links -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"
+      integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- scroll reveal anim -->
     <script src="https://unpkg.com/scrollreveal"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="script.js"></script>
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzFPVGxI-75Ilkm2z_EMuI9ubPlp8-7dQmMzzdPiIunLPPzj3bcY1ohMdT_DfZ3zPwhTA/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg")
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
 
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => {
-                    msg.innerHTML = "Message sent successfully"
-                    setTimeout(function () {
-                        msg.innerHTML = ""
-                    }, 5000)
-                    form.reset()
-                })
-                .catch(error => console.error('Error!', error.message))
-        })
-    </script>
+    <!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
 
-</body>
-
+    <script src="./assets/js/script.js"></script>
+  </body>
 </html>
